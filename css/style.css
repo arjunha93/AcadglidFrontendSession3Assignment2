@@ -1,0 +1,42 @@
+/*
+NOTE:Please do not modify anything in this style sheet without sufficien knowledg,
+This is the master style sheet for all the application
+*/
+/*
+Backgroung image addition to html page
+*/
+body {
+    background-image: url("../img/background.png");
+    background-repeat: repeat;
+}
+/*
+Nav bar customisation
+*/
+nav{
+    float:right;
+    background-color: aquamarine;
+    height: 150px;
+    width: 150px;
+    padding: 5px;
+    margin: 5px;
+    position: fixed;
+    left:80%;
+    top:10%;
+}
+/*
+Customizing the Link
+*/
+a:link{
+    text-decoration: none;
+    color: chartreuse;
+    font-weight: bold;
+    
+}
+a:hover{
+    text-decoration: underline;
+    text-decoration-color: azure;
+    cursor: cell;
+    text-shadow: 1px 1px green;
+   font-stretch: extra-expanded;
+    font-style: italic;
+}
