@@ -1,38 +1,33 @@
 <!DOCTYPE html>
 <html>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="/css/style.css">
-<body>
+<style>
+    /* Internal styles */
 
-<!-- Navigation -->
-<nav>
-  <a href="index.html">HOME</a><br>
-  <a href="about.html">ABOUT</a><br>
-  <a href="contact.html">CONTACT</a>
-</nav>
-<div style="color:white;width:80%">
-    <section>
-        <h2>Welcome To Home Page Of Web</h2>
-        <article>
-           <p style="font-family:
-Palatino Linotype, Book Antiqua, Palatino, serif;font-size:large;color:#65848F;letter-spacing:none;word-spacing:0.1em;">
-             <b>Web development</b> is a broad term for the work involved in developing a web site for the Internet (World Wide Web) or an intranet (a private network). Web development can range from developing the simplest static single page of plain text to the most complex web-based internet applications (ostyle="font-family: Palatino Linotype, Book Antiqua, Palatino, serif;"r just 'web apps') electronic businesses, and social network services. A more comprehensive list of tasks to which web development commonly refers, may include web engineering, web design, web content development, client liaison, client-side/server-side scripting, web server and network security configuration, and e-commerce development. Among web professionals, "web development" usually refers to the main non-design aspects of building web sites: writing markup and coding. Most recently Web development has come to mean the creation of content management systems or CMS. These CMS can be made from scratch, proprietary or open source. In broad terms the CMS acts as middleware between the database and the user through the browser. A principle benefit of a CMS is that it allows non-technical people to make changes to their web site without having technical knowledge.
-            </p>
-            
-         <h2>Our Image Galary:</h2>
-            <figure><br>
-                <img src="./img/1.jpg" alt="The Pulpit Rock" width="304" height="228">
-                <figcaption>Fig1. - A view of HTML5 and CSS.</figcaption><br>
-                 <img src="./img/2.jpg" alt="The Pulpit Rock" width="304" height="228">
-                <figcaption>Fig1. - A view of Javascript.</figcaption><br>
-                 <img src="./img/3.jpg" alt="The Pulpit Rock" width="304" height="228">
-                <figcaption>Fig1. - A view of Angular JS.</figcaption>
-            </figure>
-            <H2>Few More About it:</H2>
-            <p>For larger organizations and businesses, web development teams can consist of hundreds of people (<a href="#" title="Web developer">web developers</a>) and follow standard methods like <a href="#" title="Agile software development">Agile methodologies</a> while developing websites. Smaller organizations may only require a single permanent or contracting developer, or secondary assignment to related job positions such as a <a href="#" title="Graphic designer">graphic designer</a> or <a href="#">information systems</a> technician. Web development may be a collaborative effort between departments rather than the domain of a designated department. There are three kind of web developer specialization: front-end developer, back-end developer, and full-stack developer.</p>
-        </article>
-    </section>
-</div>
+    #iconWord {
+        width: 4% !important;
+    }
+    .wp{
+        font-size: 200%;
+    }
+    .wpBig{
+        font-size: 150%;
+    }
+</style>
+
+
+<body>
+    <center>
+        <p>
+            <img id="iconWord" src="data:image/png;base64,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"
+                alt="">
+                <span class="wp" style="color: #3973ac"><span class="wpBig" >W</span>ORD</span>
+                <span class="wp"><span class="wpBig">P</span>RESS</span>
+        </p>
+
+        Upload a theme <input type="file" name="myFile"><br>
+        or Search in wordpress <input type="text" name="Search" id="">
+    </center>
+
 </body>
+
 </html>
